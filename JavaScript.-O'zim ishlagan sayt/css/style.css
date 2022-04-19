@@ -313,6 +313,7 @@ a {
   flex-direction: column;
   align-items: flex-start;
 }
+
 .offer__slider-counter {
   display: flex;
   width: 180px;
@@ -324,6 +325,7 @@ a {
   width: 100%;
   margin-top: 15px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+  display: flex;
 }
 .offer__slider-prev {
   margin-right: 10px;
@@ -683,4 +685,101 @@ a {
   to {
     opacity: 1;
   }
+}
+
+.offer__slider-ol {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+}
+.offer__slider-li {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 30px;
+  height: 6px;
+  margin: 0 3px;
+  cursor: pointer;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: 0.5;
+  transform: opacity 0.6s ease;
+}
+
+.bg_content {
+  background: #898380;
+}
+.about_content1 {
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 5%;
+  padding-top: 8%;
+}
+.about_left p:nth-child(1) {
+  font-size: 30px;
+  color: #ffffff;
+}
+.about_left span {
+  font-weight: bold;
+  color: #000;
+}
+.about_left p:nth-child(2) {
+  margin: 2% 0;
+  color: #848484;
+}
+.accordion {
+  background-color: rgb(51, 50, 50, 0.7);
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  margin: 1% 0;
+}
+.text-acc {
+  color: #fff !important;
+}
+.accordion span {
+  padding: 0 15px;
+  color: #fff;
+  font-size: 18px;
+}
+.active,
+.accordion:hover {
+  background-color: rgb(51, 50, 50, 0.4);
+}
+.accordion:after {
+  content: "\002B";
+  color: #fff;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2212";
+}
+.panel {
+  padding: 0 18px;
+  background-color: rgb(51, 50, 50, 0.7);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.panel p {
+  font-size: 16px !important;
+  margin: 10px !important;
 }
